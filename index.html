@@ -8,78 +8,70 @@
 
 <body>
   <header class="main-header">
-    <div class="info-panel">
+    <div class="main-header-info-panel">
       <div class="container">
-        <div class="info-panel-menu">
-          <div><a href="index.html">Техномарт</a>
-          </div>
-          <form action="#" method="get">
-            <label for="search">Поиск</label>
-            <input class="info-panel-search" type="text" name="search" id="search">
-          </form>
-          <div><a href="#">Закладки:<span></span></a>
-          </div>
-          <div><a href="#">Корзина:<span></span></a>
-          </div>
-          <div><a href="#">Оформить заказ</a>
-          </div>
+
+        <div>
+          <a href="index.html">Техномарт</a>
         </div>
+        <form action="#" method="get">
+          <label for="search">Поиск</label>
+          <input class="info-panel-search" type="text" name="search" id="search">
+        </form>
+        <a href="#">Закладки:<span>0</span></a>
+        <a href="#">Корзина:<span>0</span></a>
+        <a href="#">Оформить заказ</a>
       </div>
     </div>
-    <div class="main-menu">
+    <div class="main-header-menu">
       <div class="container">
-        <div class="main-menu-info">
-          <div class="main-menu-info-block">
+        <div class="menu-info">
+          <div class="menu-info-block">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
           </div>
-          <div class="main-menu-info-block">
+          <div class="menu-info-block">
             <p>+7 (812) 555-05-55</p>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <div class="main-menu-info-block user-room">
+          <div class="menu-info-block user-room">
             <a class="login-link" href="#">Войти</a>
             <a class="signup-link" href="#">Регистрация</a>
-
-            <p><a href="#">Равшан Джамшутович</a></p>
-            <ul>
-              <li><a class="user-room-orders" href="#">мои заказы</a></li>
-              <li><a class="user-room-page" href="#">личный кабинет</a></li>
-            </ul>
-
+            <div>
+              <a href="#">Равшан Джамшутович</a>
+              <a class="user-room-orders" href="#">мои заказы</a>
+              <a class="user-room-page" href="#">личный кабинет</a>
+            </div>
           </div>
+          <nav class="menu-nav">
+            <ul>
+              <li>
+                <a href="">Главная</a>
+              </li>
+              <li>
+                <a href="">Компания</a>
+              </li>
+              <li>
+                <a href="">Каталог</a>
+              </li>
+              <li>
+                <a href="">Новости</a>
+              </li>
+              <li>
+                <a href="">Спецпредложения</a>
+              </li>
+              <li>
+                <a href="">Доставка</a>
+              </li>
+              <li>
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-menu-nav">
-          <ul>
-            <li>
-              <a href="">Главная</a>
-            </li>
-            <li>
-              <a href="">Компания</a>
-            </li>
-            <li>
-              <a href="">Каталог</a>
-            </li>
-            <li>
-              <a href="">Новости</a>
-            </li>
-            <li>
-              <a href="">Спецпредложения</a>
-            </li>
-            <li>
-              <a href="">Доставка</a>
-            </li>
-            <li>
-              <a href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </div>
   </header>
-
   <main>
-
-
     <section class="features-main">
       <div class="container">
         <div class="feature-main-item">
@@ -96,19 +88,29 @@
         </div>
 
         <div class="feature-main-slide">
-          <div class="feature-main-slide-image">
-            <img src="img.png" alt="перфератор">
+          <div class="slide-1">
+            <div class="feature-main-slide-image">
+              <img src="img.png" alt="перфоратор">
+            </div>
+            <div>
+              <h3>Перфораторы</h3>
+              <p>Настроящие мужские игрушки</p>
+              <p><a href="#">ОТКРЫТЬ КАТАЛОГ</a></p>
+            </div>
           </div>
-          <div>
-            <h3>Перфораторы</h3>
-            <p>Настроящие мужские игрушки</p>
-            <p><a href="#">ОТКРЫТЬ КАТАЛОГ</a></p>
+          <div class="slide-2">
+            <div class="feature-main-slide-image">
+              <img src="img.png" alt="дрели">
+            </div>
+            <div>
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+            </div>
           </div>
-          <a href="#">Предыдущая</a>
-          <a href="#">Следующая</a>
+          <p><a href="#">ОТКРЫТЬ КАТАЛОГ</a></p>
+          <label>Вперед</label>
+          <label>Назад</label>
         </div>
-
-
         <div class="feature-main-item">
           <h3>Скидки 50%
 				</h3>
@@ -123,8 +125,6 @@
         </div>
       </div>
     </section>
-
-
     <section class="popular-goods">
       <div class="container">
         <h3>Популярные товары:</h3>
@@ -184,59 +184,56 @@
         </ul>
       </div>
     </section>
-
     <section class="popular-producers">
       <div class="container">
-
         <div class="popular-producers-head">
           <h3>Популярные производители:</h3>
           <a href="#">все производители</a>
         </div>
-
-        <ul class="popular-producers-items"></ul>
-        <li>
-          <a href="">
-            <img src="img.png" alt="bosch">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img.png" alt="makita">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img.png" alt="dewalt">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img.png" alt="интерскол">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img.png" alt="hitachi">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img.png" alt="lg">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img.png" alt="aeg power solution">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img.png" alt="metavo">
-          </a>
-        </li>
+        <ul class="popular-producers-items">
+          <li>
+            <a href="">
+              <img src="img.png" alt="bosch">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img.png" alt="makita">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img.png" alt="dewalt">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img.png" alt="интерскол">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img.png" alt="hitachi">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img.png" alt="lg">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img.png" alt="aeg power solution">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img.png" alt="metavo">
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
-
     <article class="features-services">
       <div class="container">
         <header>
@@ -244,27 +241,25 @@
           <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </header>
         <div class="features-services-slide">
-          <input type="radio" name="delivery" id="delivery">
+          <input type="radio" name="features-slide" id="delivery">
           <label for="delivery">Доставка</label>
-          <input type="radio" name="warranty" id="waranty">
-          <label for="waranty">Гарантия</label>
-          <input type="radio" name="credit" id="creit">
+          <input type="radio" name="features-slide" id="warranty">
+          <label for="warranty">Гарантия</label>
+          <input type="radio" name="features-slide" id="credit">
           <label for="credit">Кредит</label>
         </div>
         <div class="feature-services-delivery">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
-
           <div class="feature-services-image">
             <img src="img.png" alt="truck">
           </div>
         </div>
       </div>
     </article>
-
     <section class="company-info">
       <div class="container">
-        <section class="company-about">
+        <section class="company-info-about">
           <h2>КОМПАНИЯ «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
@@ -275,7 +270,7 @@
           </ul>
           <a href="#">Подробнее о компании</a>
         </section>
-        <section class="company-map">
+        <section class="company-info-map">
           <h2>КОНТАКТЫ</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <a><img src="img.png" alt="карта"></a>
@@ -284,7 +279,6 @@
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <div class="container">
       <div class="footer-container-top">
