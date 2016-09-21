@@ -4,36 +4,39 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <div class="main-header-info-panel">
-      <div class="container">
-
-        <div>
+      <div class="container clearfix">
+        <div class="logo to-left">
           <a href="index.html">Техномарт</a>
         </div>
-        <form action="#" method="get">
+        <form class="search to-left" action="#" method="get">
           <label for="search">Поиск</label>
           <input class="info-panel-search" type="text" name="search" id="search">
         </form>
-        <a href="#">Закладки:<span>0</span></a>
-        <a href="#">Корзина:<span>0</span></a>
-        <a href="#">Оформить заказ</a>
+        <a class="bookmarks to-right" href="#">Закладки:<span>0</span>
+        </a>
+        <a class="backet to-right" href="#">Корзина:<span>0</span>
+        </a>
+        <a class="order to-right" href="#">Оформить заказ</a>
       </div>
     </div>
     <div class="main-header-menu">
       <div class="container">
-        <div class="menu-info">
-          <div class="menu-info-block">
+        <div class="menu-info clearfix">
+          <div class="menu-info-block to-left">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
           </div>
-          <div class="menu-info-block">
+          <div class="menu-info-block to-left">
             <p>+7 (812) 555-05-55</p>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <div class="menu-info-block user-room">
+          <div class="menu-info-block user-room to-right">
             <a class="login-link" href="#">Войти</a>
             <a class="signup-link" href="#">Регистрация</a>
             <div>
@@ -73,21 +76,21 @@
   </header>
   <main>
     <section class="features-main">
-      <div class="container">
-        <div class="feature-main-item">
+      <div class="container clearfix">
+        <div class="feature-main-item to-left">
           <h3>Материалы</h3>
           <a href="#">на любой вкус</a>
         </div>
-        <div class="feature-main-item">
+        <div class="feature-main-item to-left">
           <h3>Инструмент</h3>
           <a href="#">НА ВСЕ СЛУЧАИ</a>
         </div>
-        <div class="feature-main-item">
+        <div class="feature-main-item to-left">
           <h3>Техника</h3>
           <a href="#">для стройки</a>
         </div>
 
-        <div class="feature-main-slide">
+        <div class="feature-main-slide to-left">
           <div class="slide-1">
             <div class="feature-main-slide-image">
               <img src="img.png" alt="перфоратор">
@@ -98,7 +101,7 @@
               <p><a href="#">ОТКРЫТЬ КАТАЛОГ</a></p>
             </div>
           </div>
-          <div class="slide-2">
+          <div class="slide-2 hidden">
             <div class="feature-main-slide-image">
               <img src="img.png" alt="дрели">
             </div>
@@ -111,13 +114,13 @@
           <label>Вперед</label>
           <label>Назад</label>
         </div>
-        <div class="feature-main-item">
+        <div class="feature-main-item to-left">
           <h3>Скидки 50%
 				</h3>
           <a href="#">На 350 ТОВАРОВ</a>
           <img src="img.png" alt="корзина">
         </div>
-        <div class="feature-main-item">
+        <div class="feature-main-item to-left">
           <h3>Доставка
 				</h3>
           <a href="#">бесплатно</a>
@@ -127,8 +130,10 @@
     </section>
     <section class="popular-goods">
       <div class="container">
-        <h3>Популярные товары:</h3>
-        <a href="#">все популярные товары</a>
+        <div class="popeular-goods-head">
+          <h3 class="popular-header">Популярные товары:</h3>
+          <a class="popular-link" href="#">все популярные товары</a>
+        </div>
         <ul class="popular-goods-items">
           <li>
             <div>
@@ -187,8 +192,8 @@
     <section class="popular-producers">
       <div class="container">
         <div class="popular-producers-head">
-          <h3>Популярные производители:</h3>
-          <a href="#">все производители</a>
+          <h3 class="producers-head">Популярные производители:</h3>
+          <a class="producers-link" href="#">все производители</a>
         </div>
         <ul class="popular-producers-items">
           <li>
@@ -235,12 +240,12 @@
       </div>
     </section>
     <article class="features-services">
-      <div class="container">
-        <header>
+      <div class="container clearfix">
+        <header class="services-header">
           <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </header>
-        <div class="features-services-slide">
+        <div class="features-services-slide to-left">
           <input type="radio" name="features-slide" id="delivery">
           <label for="delivery">Доставка</label>
           <input type="radio" name="features-slide" id="warranty">
@@ -248,7 +253,7 @@
           <input type="radio" name="features-slide" id="credit">
           <label for="credit">Кредит</label>
         </div>
-        <div class="feature-services-delivery">
+        <div class="feature-services-delivery to-right">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
           <div class="feature-services-image">
@@ -258,8 +263,8 @@
       </div>
     </article>
     <section class="company-info">
-      <div class="container">
-        <section class="company-info-about">
+      <div class="container clearfix">
+        <section class="company-info-about to-left">
           <h2>КОМПАНИЯ «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
@@ -270,7 +275,7 @@
           </ul>
           <a href="#">Подробнее о компании</a>
         </section>
-        <section class="company-info-map">
+        <section class="company-info-map to-right">
           <h2>КОНТАКТЫ</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <a><img src="img.png" alt="карта"></a>
@@ -279,14 +284,14 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-container-top">
-        <div class="footer-address">
+  <footer class="main-footer">
+    <div class="footer-container-top">
+      <div class="container clearfix">
+        <div class="footer-address to-left">
           <h1>Техномарт</h1>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
         </div>
-        <div class="footer-menu">
+        <div class="footer-menu to-right">
           <ul class="footer-menu-top">
             <li><a href="#">Компания</a>
             </li>
@@ -313,20 +318,20 @@
         </div>
       </div>
     </div>
-    <div class="footer-container-bottom">
-      <div class="container">
+    <div class="footer-container-bottom ">
+      <div class="container clearfix">
         <p class="footer-company-validation">2010–2016 Компания «Техномарт» Все права защищены</p>
-        <div class="footer-contact">
-          <b>обратная связь:</b>
-          <a class="btn" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="footer-social">
+        <div class="footer-social to-left">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright to-right">
           <b>Разработано:</b> <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </div>
+        <div class="footer-contact to-right">
+          <b>обратная связь:</b>
+          <a class="btn" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
       </div>
     </div>
