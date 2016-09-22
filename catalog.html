@@ -5,36 +5,39 @@
   <meta charset="utf-8">
   <title>Техномарт</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <div class="main-header-info-panel">
-      <div class="container">
-
-        <div>
+      <div class="container clearfix">
+        <div class="logo to-left">
           <a href="index.html">Техномарт</a>
         </div>
-        <form action="#" method="get">
+        <form class="search to-left" action="#" method="get">
           <label for="search">Поиск</label>
           <input class="info-panel-search" type="text" name="search" id="search">
         </form>
-        <a href="#">Закладки:<span>0</span></a>
-        <a href="#">Корзина:<span>0</span></a>
-        <a href="#">Оформить заказ</a>
+        <a class="bookmarks to-right" href="#">Закладки:<span>0</span>
+        </a>
+        <a class="backet to-right" href="#">Корзина:<span>0</span>
+        </a>
+        <a class="order to-right" href="#">Оформить заказ</a>
       </div>
     </div>
     <div class="main-header-menu">
       <div class="container">
-        <div class="menu-info">
-          <div class="menu-info-block">
+        <div class="menu-info clearfix">
+          <div class="menu-info-block to-left">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
           </div>
-          <div class="menu-info-block">
+          <div class="menu-info-block to-left">
             <p>+7 (812) 555-05-55</p>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <div class="menu-info-block user-room">
+          <div class="menu-info-block user-room to-right">
             <a class="login-link" href="#">Войти</a>
             <a class="signup-link" href="#">Регистрация</a>
             <div>
@@ -72,7 +75,6 @@
       </div>
     </div>
   </header>
-
   <main>
     <div class="breadcrumbs-box">
       <div class="container">
@@ -93,11 +95,11 @@
       </div>
     </div>
     <section class="catalog">
-      <div class="container">
-        <div>
+      <div class="container clearfix">
+        <div class="catolog-header">
           <h2>Перфораторы</h2>
         </div>
-        <aside>
+        <aside class="to-left">
           <div class="catalog-filter-box">
             <p>фильтр:</p>
             <form class="catalog-filter" action="#" method="get">
@@ -129,9 +131,9 @@
             </form>
           </div>
         </aside>
-        <div class="catalog-goods-box">
-          <div class="catalog-goods-sorting">
-            <h3>Сортировка:</h3>
+        <div class="catalog-goods-box to-right">
+          <div class="catalog-goods-sorting clearfix">
+            <h3 class="catalog-goods-sorting-header">Сортировка:</h3>
             <ul>
               <li>
                 <a href="#">По цене</a>
@@ -291,14 +293,14 @@
       </div>
     </div>
   </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-container-top">
-        <div class="footer-address">
+  <footer class="main-footer">
+    <div class="footer-container-top">
+      <div class="container clearfix">
+        <div class="footer-address to-left">
           <h1>Техномарт</h1>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
         </div>
-        <div class="footer-menu">
+        <div class="footer-menu to-right">
           <ul class="footer-menu-top">
             <li><a href="#">Компания</a>
             </li>
@@ -325,24 +327,25 @@
         </div>
       </div>
     </div>
-    <div class="footer-container-bottom">
-      <div class="container">
+    <div class="footer-container-bottom ">
+      <div class="container clearfix">
         <p class="footer-company-validation">2010–2016 Компания «Техномарт» Все права защищены</p>
-        <div class="footer-contact">
-          <b>обратная связь:</b>
-          <a class="btn" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="footer-social">
+        <div class="footer-social to-left">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright to-right">
           <b>Разработано:</b> <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </div>
+        <div class="footer-contact to-right">
+          <b>обратная связь:</b>
+          <a class="btn" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>
