@@ -1,625 +1,665 @@
-        html,
-        body {
-          min-width: 1122px;
-          margin: 0;
-          padding: 0;
-        }
-        
-        body {
-          font-family: 'Cuprum', "Arial", sans-serif;
-          font-size: 13px;
-          line-height: 24px;
-          color: #000000;
-        }
-        
-        .clearfix:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        
-        .to-left {
-          float: left;
-        }
-        
-        .to-right {
-          float: right;
-        }
-        
-        .container {
-          width: 960px;
-          margin: 0 auto;
-          padding: 0 10px;
-        }
-        
-        .hidden {
-          display: none;
-        }
-        /*  ============================ICON-FONT=============================      */
-        
-        @font-face {
-          font-weight: normal;
-          font-style: normal;
-          font-family: "symbols-technomart";
-          src: url("../fonts/symbols-technomart.woff") format("woff"), url("../fonts/symbols-technomart.woff2") format("woff2");
-        }
-        
-        [class^="icon-"]::before,
-        [class*=" icon-"]::before {
-          display: inline-block;
-          width: 1em;
-          margin-right: 0.2em;
-          margin-left: 0.2em;
-          font-weight: normal;
-          line-height: 1em;
-          font-family: "symbols-technomart";
-          text-align: center;
-          text-transform: none;
-          text-decoration: inherit;
-          font-style: normal;
-          font-variant: normal;
-          speak: none;
-        }
-        
-        .icon-left::before {
-          content: "\3c";
-        }
-        /* "&lt;" */
-        
-        .icon-right::before {
-          content: "\3e";
-        }
-        /* "&gt;" */
-        
-        .icon-basket::before {
-          content: "\62";
-        }
-        /* "b" */
-        
-        .icon-facebook::before {
-          content: "\66";
-        }
-        /* "f" */
-        
-        .icon-twitter::before {
-          content: "\74";
-        }
-        /* "t" */
-        
-        .icon-vk::before {
-          content: "\76";
-        }
-        /* "v" */
-        
-        .icon-up::before {
-          content: "\2c4";
-        }
-        /* "˄" */
-        
-        .icon-down::before {
-          content: "\2c5";
-        }
-        /* "˅" */
-        
-        .icon-left-big::before {
-          content: "\2190";
-        }
-        /* "←" */
-        
-        .icon-right-big::before {
-          content: "\2192";
-        }
-        /* "→" */
-        
-        .icon-login::before {
-          content: "\2386";
-        }
-        /* "⎆" */
-        
-        .icon-logout::before {
-          content: "\241b";
-        }
-        /* "␛" */
-        
-        .icon-up-dir::before {
-          content: "\25b2";
-        }
-        /* "▲" */
-        
-        .icon-down-dir::before {
-          content: "\25bc";
-        }
-        /* "▼" */
-        
-        .icon-circle::before {
-          content: "\25cb";
-        }
-        /* "○" */
-        
-        .icon-circle-dot::before {
-          content: "\25cf";
-        }
-        /* "●" */
-        
-        .icon-star::before {
-          content: "\2605";
-        }
-        /* "★" */
-        
-        .icon-check-off::before {
-          content: "\2610";
-        }
-        /* "☐" */
-        
-        .icon-check-on::before {
-          content: "\2611";
-        }
-        /* "☑" */
-        
-        .icon-youtube::before {
-          content: "\f39e";
-        }
-        /* "" */
-        
-        .icon-home::before {
-          content: "🏠";
-        }
-        /* "\1f3e0" */
-        
-        .icon-user::before {
-          content: "👨";
-        }
-        /* "\1f468" */
-        
-        .icon-phone::before {
-          content: "📞";
-        }
-        /* "\1f4de" */
-        
-        .icon-instagramm::before {
-          content: "📷";
-        }
-        /* "\1f4f7" */
-        
-        .icon-search::before {
-          content: "🔍";
-        }
-        /* "\1f50d" */
-        
-        .icon-bookmark::before {
-          content: "🔖";
-        }
-        /* "\1f516" */
-        /*==========================SPRITESHEET==========================*/
-        
-        .sprite {
-          background-image: url("../img/sprite.png");
-          background-repeat: no-repeat;
-          display: block;
-        }
-        
-        .sprite-bucket {
-          width: 44px;
-          height: 65px;
-          background-position: -10px -10px;
-        }
-        
-        .sprite-car {
-          width: 78px;
-          height: 63px;
-          background-position: -10px -95px;
-        }
-        
-        .sprite-drill {
-          width: 75px;
-          height: 61px;
-          background-position: -10px -178px;
-        }
-        
-        .sprite-tractor {
-          width: 78px;
-          height: 62px;
-          background-position: -10px -259px;
-        }
-        
-        .sprite-trolly {
-          width: 59px;
-          height: 72px;
-          background-position: -10px -341px;
-        }
-        /*====================================HEADER=========================*/
-        /*-------------------HEADER-TOP--------------------- */
-        
-        .main-header-info-panel {
-          min-height: 42px;
-          background-color: #293449;
-          color: #f1f1f3;
-        }
-        
-        .logo {
-          width: 220px;
-        }
-        
-        .search {
-          width: 270px;
-        }
-        /*  --------------------HEADER-BOTTOM-------------------*/
-        
-        .main-header-menu {
-          min-height: 278px;
-          background-color: #f2f6f8;
-          margin-bottom: 60px;
-        }
-        
-        .menu-info-block {
-          width: 300px;
-          margin-right: 20px;
-          min-height: 158px;
-        }
-        
-        .menu-info-block.user-room {
-          margin-right: 0px;
-        }
-        
-        .menu-nav {
-          clear: both;
-        }
-        
-        .menu-nav ul {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-          font-size: 0;
-          background-color: #293449;
-        }
-        
-        .menu-nav li {
-          display: inline-block;
-          font-size: 17px;
-          vertical-align: top;
-        }
-        
-        .menu-nav a {
-          display: block;
-          padding: 21px 31px;
-          /* the size has to be changed*/
-          color: #ffffff;
-          text-decoration: none;
-        }
-        /*======================MAIN-INDEX-PAGE==================================*/
-        /*--------------------FEATURES---------------------*/
-        
-        .feature-main-item {
-          width: 300px;
-          min-height: 125px;
-        }
-        
-        .feature-main-slide {
-          width: 620px;
-          height: 266px;
-          /* remove the hieght */
-          margin-right: 20px;
-        }
-        
-        .feature-main-item:nth-child(1),
-        .feature-main-item:nth-child(2) {
-          margin-right: 20px;
-          margin-bottom: 20px;
-        }
-        
-        .feature-main-item:nth-child(5) {
-          margin-bottom: 20px;
-        }
-        
-        .features-main {
-          margin-bottom: 53px;
-        }
-        /* ----------------------POPULAR-GOODS---------------*/
-        
-        .popular-header {
-          display: inline-block;
-        }
-        
-        .popular-goods-head {
-          min-height: 89px;
-          margin-bottom: 22px;
-          background-color: #f7f3ec;
-        }
-        
-        .popular-goods-items {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-          font-size: 0;
-        }
-        
-        .popular-goods-items li {
-          display: inline-block;
-          margin-right: 20px;
-          width: 218px;
-          font-size: 17px;
-          min-height: 316px;
-          vertical-align: top;
-          border: 1px solid #e5e5e5;
-        }
-        
-        .popular-goods-items li:last-child {
-          margin-right: 0px;
-        }
-        
-        .popular-goods {
-          margin-bottom: 20px;
-        }
-        /* ---------------------POPULAR-PRODUCERS---------------*/
-        
-        .producers-head {
-          display: inline-block;
-        }
-        
-        .popular-producers-head {
-          min-height: 89px;
-          margin-bottom: 22px;
-        }
-        
-        .popular-producers-items {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-          font-size: 0;
-        }
-        
-        .popular-producers-items li {
-          display: inline-block;
-          min-height: 143px;
-          margin-right: 20px;
-          margin-bottom: 20px;
-          width: 218px;
-          font-size: 17px;
-          vertical-align: top;
-          border: 1px solid #e5e5e5;
-        }
-        
-        .popular-goods-items li:last-child {
-          margin-right: 0px;
-        }
-        
-        .popular-producers {
-          margin-bottom: 130px;
-        }
-        /* ---------------FEATURES-SERVICES----------------------*/
-        
-        .services-header {
-          clear: both;
-          width: 480px;
-          margin-bottom: 70px;
-        }
-        
-        .features-services-slide {
-          width: 240px;
-        }
-        
-        .feature-services-delivery {
-          width: 650px;
-        }
-        
-        .features-services {
-          margin-bottom: 80px;
-          background-color: #f2f6f8;
-          min-height: 353px;
-          padding-top: 67px;
-          padding-bottom: 102px;
-        }
-        /*-------------------------COMPANY-INFO----------------*/
-        
-        .company-info-about {
-          width: 560px;
-        }
-        
-        .company-info-map {
-          width: 300px;
-        }
-        /*
+    html,
+      body {
+        min-width: 1122px;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        font-family: 'Cuprum', "Arial", sans-serif;
+        font-size: 13px;
+        line-height: 24px;
+        color: #000000;
+      }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .to-left {
+        float: left;
+      }
+      
+      .to-right {
+        float: right;
+      }
+      
+      .container {
+        width: 940px;
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+      
+      .hidden {
+        display: none;
+      }
+      /*  ============================ICON-FONT=============================      */
+      
+      @font-face {
+        font-weight: normal;
+        font-style: normal;
+        font-family: "symbols-technomart";
+        src: url("../fonts/symbols-technomart.woff") format("woff"), url("../fonts/symbols-technomart.woff2") format("woff2");
+      }
+      
+      [class^="icon-"]::before,
+      [class*=" icon-"]::before {
+        display: inline-block;
+        width: 1em;
+        margin-right: 0.2em;
+        margin-left: 0.2em;
+        font-weight: normal;
+        line-height: 1em;
+        font-family: "symbols-technomart";
+        text-align: center;
+        text-transform: none;
+        text-decoration: inherit;
+        font-style: normal;
+        font-variant: normal;
+        speak: none;
+      }
+      
+      .icon-left::before {
+        content: "\3c";
+      }
+      /* "&lt;" */
+      
+      .icon-right::before {
+        content: "\3e";
+      }
+      /* "&gt;" */
+      
+      .icon-basket::before {
+        content: "\62";
+      }
+      /* "b" */
+      
+      .icon-facebook::before {
+        content: "\66";
+      }
+      /* "f" */
+      
+      .icon-twitter::before {
+        content: "\74";
+      }
+      /* "t" */
+      
+      .icon-vk::before {
+        content: "\76";
+      }
+      /* "v" */
+      
+      .icon-up::before {
+        content: "\2c4";
+      }
+      /* "˄" */
+      
+      .icon-down::before {
+        content: "\2c5";
+      }
+      /* "˅" */
+      
+      .icon-left-big::before {
+        content: "\2190";
+      }
+      /* "←" */
+      
+      .icon-right-big::before {
+        content: "\2192";
+      }
+      /* "→" */
+      
+      .icon-login::before {
+        content: "\2386";
+      }
+      /* "⎆" */
+      
+      .icon-logout::before {
+        content: "\241b";
+      }
+      /* "␛" */
+      
+      .icon-up-dir::before {
+        content: "\25b2";
+      }
+      /* "▲" */
+      
+      .icon-down-dir::before {
+        content: "\25bc";
+      }
+      /* "▼" */
+      
+      .icon-circle::before {
+        content: "\25cb";
+      }
+      /* "○" */
+      
+      .icon-circle-dot::before {
+        content: "\25cf";
+      }
+      /* "●" */
+      
+      .icon-star::before {
+        content: "\2605";
+      }
+      /* "★" */
+      
+      .icon-check-off::before {
+        content: "\2610";
+      }
+      /* "☐" */
+      
+      .icon-check-on::before {
+        content: "\2611";
+      }
+      /* "☑" */
+      
+      .icon-youtube::before {
+        content: "\f39e";
+      }
+      /* "" */
+      
+      .icon-home::before {
+        content: "🏠";
+      }
+      /* "\1f3e0" */
+      
+      .icon-user::before {
+        content: "👨";
+      }
+      /* "\1f468" */
+      
+      .icon-phone::before {
+        content: "📞";
+      }
+      /* "\1f4de" */
+      
+      .icon-instagramm::before {
+        content: "📷";
+      }
+      /* "\1f4f7" */
+      
+      .icon-search::before {
+        content: "🔍";
+      }
+      /* "\1f50d" */
+      
+      .icon-bookmark::before {
+        content: "🔖";
+      }
+      /* "\1f516" */
+      /*==========================SPRITESHEET==========================*/
+      
+      .sprite {
+        background-image: url("../img/sprite.png");
+        background-repeat: no-repeat;
+        display: block;
+      }
+      
+      .sprite-bucket {
+        width: 44px;
+        height: 65px;
+        background-position: -10px -10px;
+      }
+      
+      .sprite-car {
+        width: 78px;
+        height: 63px;
+        background-position: -10px -95px;
+      }
+      
+      .sprite-drill {
+        width: 75px;
+        height: 61px;
+        background-position: -10px -178px;
+      }
+      
+      .sprite-tractor {
+        width: 78px;
+        height: 62px;
+        background-position: -10px -259px;
+      }
+      
+      .sprite-trolly {
+        width: 59px;
+        height: 72px;
+        background-position: -10px -341px;
+      }
+      /*====================================HEADER=========================*/
+      /*-------------------HEADER-TOP--------------------- */
+      
+      .main-header-info-panel {
+        min-height: 42px;
+        background-color: #293449;
+        color: #f1f1f3;
+      }
+      
+      .logo {
+        width: 220px;
+      }
+      
+      .search {
+        width: 270px;
+      }
+      /*  --------------------HEADER-BOTTOM-------------------*/
+      
+      .main-header {
+        margin-bottom: 60px;
+      }
+      
+      .main-header-menu {
+        min-height: 278px;
+        background-color: #f2f6f8;
+      }
+      
+      .menu-info-block {
+        width: 300px;
+        margin-right: 20px;
+        min-height: 158px;
+      }
+      
+      .menu-info-block.user-room {
+        margin-right: 0px;
+      }
+      
+      .menu-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+        background-color: #293449;
+      }
+      
+      .menu-nav li {
+        display: inline-block;
+        font-size: 17px;
+        vertical-align: top;
+      }
+      
+      .menu-nav a {
+        display: block;
+        padding: 21px 31px;
+        /* the size has to be changed*/
+        color: #ffffff;
+        text-decoration: none;
+      }
+      /*======================MAIN-INDEX-PAGE==================================*/
+      /*--------------------FEATURES---------------------*/
+      
+      .feature-main-item {
+        width: 300px;
+        min-height: 125px;
+      }
+      
+      .feature-main-slide {
+        width: 620px;
+        height: 266px;
+        /* remove the hieght */
+        margin-right: 20px;
+      }
+      
+      .feature-main-item:nth-child(1),
+      .feature-main-item:nth-child(2) {
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      
+      .feature-main-item:nth-child(5) {
+        margin-bottom: 20px;
+      }
+      
+      .features-main {
+        margin-bottom: 53px;
+      }
+      /* ----------------------POPULAR-GOODS---------------*/
+      /*Нужно выровнить горизонтально */
+      
+      .popular-header {
+        float: left;
+        width: 375px;
+        margin: 0px;
+        font-size: 30px;
+        line-height: 30px;
+      }
+      
+      .popular-link {
+        float: right;
+        width: 253px;
+        min-height: 38px;
+        text-align: center;
+        vertical-align: middle;
+        /*          padding: 11px 70px;*/
+        background-color: #ee3643;
+      }
+      
+      .popular-goods-head {
+        margin-bottom: 22px;
+        padding: 25px;
+        background-color: #f7f3ec;
+      }
+      
+      .popular-goods-items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+      }
+      
+      .popular-goods-items li {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 218px;
+        font-size: 17px;
+        min-height: 316px;
+        vertical-align: top;
+        border: 1px solid #e5e5e5;
+      }
+      
+      .popular-goods-items li:last-child {
+        margin-right: 0px;
+      }
+      /* ---------------------POPULAR-PRODUCERS---------------*/
+      /*Нужно выровнить горизонтально */
+      
+      .producers-head {
+        float: left;
+        width: 375px;
+        margin: 0px;
+        font-size: 30px;
+        line-height: 30px;
+      }
+      
+      .producers-link {
+        float: right;
+        width: 253px;
+        min-height: 38px;
+        text-align: center;
+        vertical-align: middle;
+        /*                    padding: 11px 70px;*/
+        background-color: #ee3643;
+      }
+      
+      .popular-goods-head {
+        margin-bottom: 22px;
+        padding: 25px;
+        background-color: #f7f3ec;
+      }
+      
+      .popular-producers-head {
+        margin-bottom: 22px;
+        display: block;
+        padding: 25px;
+        background-color: #f7f3ec;
+      }
+      
+      .popular-producers-items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+      }
+      
+      .popular-producers-items li {
+        display: inline-block;
+        min-height: 143px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 218px;
+        font-size: 17px;
+        vertical-align: top;
+        border: 1px solid #e5e5e5;
+      }
+      
+      .popular-goods-items li:last-child {
+        margin-right: 0px;
+      }
+      
+      .popular-producers {
+        margin-bottom: 130px;
+      }
+      /* ---------------FEATURES-SERVICES----------------------*/
+      
+      .services-header {
+        margin-bottom: 70px;
+      }
+      
+      .service-header-content {
+        width: 400px;
+      }
+      
+      .features-services-slide {
+        width: 240px;
+      }
+      
+      .feature-services-delivery {
+        width: 650px;
+      }
+      
+      .features-services {
+        margin-bottom: 80px;
+        background-color: #f2f6f8;
+        min-height: 353px;
+        padding-top: 67px;
+        padding-bottom: 102px;
+      }
+      /*-------------------------COMPANY-INFO----------------*/
+      
+      .company-info-about {
+        width: 560px;
+      }
+      
+      .company-info-map {
+        width: 300px;
+      }
+      /*
 ===============================================
 --------------------FOOTER---------------------
 ===============================================*/
-        
-        .main-footer {
-          margin-top: 86px;
-        }
-        /*  ------------------FOOTER-TOP----------------*/
-        
-        .footer-container-top {
-          min-height: 193px;
-          background-color: #32425c;
-        }
-        
-        .footer-address {
-          width: 340px;
-        }
-        
-        .footer-menu {
-          width: 550px;
-        }
-        /*---------menu-top------*/
-        
-        .footer-menu-top {
-          margin: 0;
-          padding: 0;
-          width: 550px;
-          min-height: 96px;
-          list-style: none;
-          font-size: 0;
-        }
-        
-        .footer-menu-top li {
-          display: inline-block;
-          font-size: 17px;
-          vertical-align: top;
-        }
-        
-        .footer-menu-top a {
-          display: block;
-          color: #ffffff;
-          text-decoration: none;
-        }
-        /*-------menu-down-------*/
-        
-        .footer-menu-down {
-          margin: 0;
-          padding: 0;
-          width: 550px;
-          min-height: 96px;
-          list-style: none;
-          font-size: 0;
-        }
-        
-        .footer-menu-down li {
-          display: inline-block;
-          font-size: 17px;
-          vertical-align: top;
-        }
-        
-        .footer-menu-down a {
-          display: block;
-          color: #ffd180;
-          text-decoration: none;
-        }
-        /*   ----------------FOOTER-BOTTOM----------*/
-        
-        .footer-container-bottom {
-          background-color: #293449;
-        }
-        
-        .footer-company-validation {
-          float: left;
-          width: 240px;
-          margin-right: 140px;
-        }
-        
-        .footer-social {
-          width: 150px;
-          margin-right: 100px;
-        }
-        
-        .footer-copyright {
-          width: 140px;
-        }
-        
-        .footer-contact {
-          width: 180px;
-        }
-        /*======================MAIN-CATALOG-PAGE==================================*/
-        
-        .catalog {
-          margin-bottom: 125px;
-        }
-        /*--------------------BREADCRUMBS---------------------*/
-        
-        .breadcrumbs {
-          margin: 0;
-          padding: 0;
-          min-height: 60px;
-          list-style: none;
-          font-size: 0;
-        }
-        
-        .breadcrumbs li {
-          display: inline-block;
-          font-size: 13px;
-          vertical-align: top;
-          line-height: 18px;
-        }
-        
-        .breadcrumbs a {
-          display: block;
-          text-decoration: none;
-          color: #000000;
-        }
-        /*------------------------------CATALOG-HEADER----------------*/
-        
-        .catalog-filter-box {
-          clear: both;
-        }
-        /*---------------catalog-filter-------------*/
-        
-        .catalog-filter-box {
-          width: 220px;
-          min-height: 746px;
-        }
-        /*-----------------catalog-goods-----------------------*/
-        
-        .catalog-goods-box {
-          width: 700px;
-        }
-        /*------------CATALOG-GOOD-HEADER-------------*/
-        
-        .catalog-goods-sorting-header {
-          float: left;
-        }
-        
-        .catalog-goods-sorting ul {
-          float: right;
-          margin: 0;
-          padding: 0;
-          min-height: 60px;
-          list-style: none;
-          font-size: 0;
-        }
-        
-        .catalog-goods-sorting li {
-          display: inline-block;
-          font-size: 13px;
-          vertical-align: top;
-          line-height: 18px;
-        }
-        
-        .catalog-goods-sorting a {
-          display: block;
-          text-decoration: none;
-          color: #000000;
-        }
-        
-        .catalog-goods-sorting {
-          margin-bottom: 20px;
-        }
-        /*---------------------CATALOG-GOODS-ITEM-------------*/
-        
-        .catalog-goods {
-          font-size: 0;
-          margin-bottom: 31px;
-        }
-        
-        .catalog-goods-item {
-          display: inline-block;
-          width: 218px;
-          min-height: 316px;
-          vertical-align: top;
-          font-size: 13px;
-          margin-right: 20px;
-          margin-bottom: 20px;
-        }
-        
-        .catalog-goods-item:nth-child(3n) {
-          margin-right: 0;
-        }
+      
+      .main-footer {
+        margin-top: 86px;
       }
-      /*-----------------------PAGINATION-------------------*/
-      .pagination {
-        margin: 0px;
-        padding: 0px;
-        min-height: 38px;
+      /*  ------------------FOOTER-TOP----------------*/
+      
+      .footer-container-top {
+        min-height: 193px;
+        background-color: #32425c;
+      }
+      
+      .footer-address {
+        width: 340px;
+      }
+      
+      .footer-menu {
+        width: 550px;
+      }
+      /*---------menu-top------*/
+      
+      .footer-menu-top {
+        margin: 0;
+        padding: 0;
+        width: 550px;
+        min-height: 96px;
         list-style: none;
-        font-size: 0px;
+        font-size: 0;
       }
-      .pagination li {
+      
+      .footer-menu-top li {
         display: inline-block;
+        font-size: 17px;
+        vertical-align: top;
+      }
+      
+      .footer-menu-top a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+      }
+      /*-------menu-down-------*/
+      
+      .footer-menu-down {
+        margin: 0;
+        padding: 0;
+        width: 550px;
+        min-height: 96px;
+        list-style: none;
+        font-size: 0;
+      }
+      
+      .footer-menu-down li {
+        display: inline-block;
+        font-size: 17px;
+        vertical-align: top;
+      }
+      
+      .footer-menu-down a {
+        display: block;
+        color: #ffd180;
+        text-decoration: none;
+      }
+      /*   ----------------FOOTER-BOTTOM----------*/
+      
+      .footer-container-bottom {
+        background-color: #293449;
+      }
+      
+      .footer-company-validation {
+        float: left;
+        width: 240px;
+        margin-right: 140px;
+      }
+      
+      .footer-social {
+        width: 150px;
+        margin-right: 100px;
+      }
+      
+      .footer-copyright {
+        width: 130px;
+      }
+      
+      .footer-contact {
+        width: 180px;
+      }
+      /*======================MAIN-CATALOG-PAGE==================================*/
+      
+      .catalog {
+        margin-bottom: 125px;
+      }
+      /*--------------------BREADCRUMBS---------------------*/
+      
+      .breadcrumbs {
+        margin: 0;
+        padding: 0;
+        min-height: 60px;
+        list-style: none;
+        font-size: 0;
+      }
+      
+      .breadcrumbs li {
+        display: inline-block;
+        font-size: 13px;
+        vertical-align: top;
+        line-height: 18px;
+      }
+      
+      .breadcrumbs a {
+        display: block;
+        text-decoration: none;
+        color: #000000;
+      }
+      /*------------------------------CATALOG-HEADER----------------*/
+      
+      .catalog-filter-box {
+        clear: both;
+      }
+      /*---------------catalog-filter-------------*/
+      
+      .catalog-filter-box {
+        width: 220px;
+        min-height: 746px;
+      }
+      /*-----------------catalog-goods-----------------------*/
+      
+      .catalog-goods-box {
+        width: 700px;
+      }
+      /*------------CATALOG-GOOD-HEADER-------------*/
+      
+      .catalog-goods-sorting-header {
+        margin: 0px;
+        width: 100px;
+      }
+      
+      .catalog-goods-sorting ul {
+        float: right;
+        margin: 0;
+        padding: 0;
+        min-height: 60px;
+        list-style: none;
+        font-size: 0;
+      }
+      
+      .catalog-goods-sorting li {
+        display: inline-block;
+        font-size: 13px;
+        vertical-align: top;
+        line-height: 18px;
+      }
+      
+      .catalog-goods-sorting a {
+        display: block;
+        text-decoration: none;
+        color: #000000;
+      }
+      
+      .catalog-goods-sorting {
+        margin-bottom: 20px;
+      }
+      /*---------------------CATALOG-GOODS-ITEM-------------*/
+      
+      .catalog-goods {
+        font-size: 0;
+        margin-bottom: 31px;
+      }
+      
+      .catalog-goods-item {
+        display: inline-block;
+        width: 218px;
+        min-height: 316px;
         vertical-align: top;
         font-size: 13px;
+        margin-right: 20px;
+        margin-bottom: 20px;
       }
-      .pagination a {
-        display: block;
+      
+      .catalog-goods-item:nth-child(3n) {
+        margin-right: 0;
       }
-      /*-------------------------PRODUCT-INFO------------*/
-      .product-info {
-        clear: both;
-        min-height: 130px;
+    }
+    /*-----------------------PAGINATION-------------------*/
+    .pagination {
+      margin: 0px;
+      padding: 0px;
+      min-height: 38px;
+      list-style: none;
+      font-size: 0px;
+    }
+    .pagination li {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 13px;
+    }
+    .pagination a {
+      display: block;
+    }
+    /*-------------------------PRODUCT-INFO------------*/
+    .product-info {
+      min-height: 130px;
+    }
+    .product-info dd {
+      margin: 0;
+    }
