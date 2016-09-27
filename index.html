@@ -17,33 +17,39 @@
           <a href="index.html">Техномарт</a>
         </div>
         <form class="search to-left" action="#" method="get">
-          <label for="search">Поиск</label>
-          <input class="info-panel-search" type="text" name="search" id="search">
+
+          <!--          <label for="search">Поиск</label>-->
+          <input class="info-panel-search" type="text" name="search" id="search" value="Поиск">
         </form>
-        <a class="bookmarks to-right" href="#">Закладки:<span>0</span>
-        </a>
-        <a class="backet to-right" href="#">Корзина:<span>0</span>
-        </a>
         <a class="order to-right" href="#">Оформить заказ</a>
+        <a class="backet to-right" href="#">Корзина:   <span>0</span>
+        </a>
+        <a class="bookmarks to-right" href="#">Закладки:   <span>0</span>
+        </a>
+
+
       </div>
     </div>
     <div class="main-header-menu">
       <div class="container">
         <div class="menu-info clearfix">
-          <div class="menu-info-block to-left">
-            <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <div class="menu-info-block intro to-left">
+            <p>Интернет-магазин строительных материалов
+              <br> и инструментов для ремонта</p>
           </div>
-          <div class="menu-info-block to-left">
-            <p>+7 (812) 555-05-55</p>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <div class="menu-info-block contact to-left">
+            <p class="phone-number">+7 (812) 555-05-55</p>
+            <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <div class="menu-info-block user-room to-right">
-            <a class="login-link" href="#">Войти</a>
-            <a class="signup-link" href="#">Регистрация</a>
-            <div>
-              <a href="#">Равшан Джамшутович</a>
-              <a class="user-room-orders" href="#">мои заказы</a>
-              <a class="user-room-page" href="#">личный кабинет</a>
+          <div class="menu-info-block user to-right">
+            <div class="user-new">
+              <a class="login-link" href="#">Войти</a>
+              <a class="signup-link" href="#">Регистрация</a>
+            </div>
+            <div class="user-room hidden">
+              <a class="user-room-name" href="#">Равшан Джамшутович</a>
+              <a class="user-room-orders" href="#">Мои заказы</a>
+              <a class="user-room-page" href="#">Личный кабинет</a>
             </div>
           </div>
         </div>
@@ -79,28 +85,29 @@
   <main>
     <section class="features-main">
       <div class="container clearfix">
-        <div class="feature-main-item to-left">
+        <div class="feature-main-item material to-left">
           <h3>Материалы</h3>
           <a href="#">на любой вкус</a>
         </div>
-        <div class="feature-main-item to-left">
+
+        <div class="feature-main-item tools to-left">
           <h3>Инструмент</h3>
           <a href="#">НА ВСЕ СЛУЧАИ</a>
         </div>
-        <div class="feature-main-item to-left">
+        <div class="feature-main-item equipment to-left">
           <h3>Техника</h3>
           <a href="#">для стройки</a>
         </div>
 
         <div class="feature-main-slide to-left">
+
           <div class="slide-1">
             <div class="feature-main-slide-image">
-              <img src="img.png" alt="перфоратор">
+              <img src="../img/man-perforator.jpg" alt="перфоратор" width="620" height="266">
             </div>
             <div>
               <h3>Перфораторы</h3>
               <p>Настроящие мужские игрушки</p>
-              <p><a href="#">ОТКРЫТЬ КАТАЛОГ</a></p>
             </div>
           </div>
           <div class="slide-2 hidden">
@@ -112,21 +119,24 @@
               <p>Соседям на радость!</p>
             </div>
           </div>
-          <p><a href="#">ОТКРЫТЬ КАТАЛОГ</a></p>
-          <label>Вперед</label>
-          <label>Назад</label>
+          <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+          <label class="prev">&#10094;</label>
+          <label class="next">&#10095;</label>
+          <div class="slider-control">
+            <i class="active"></i>
+            <i></i>
+          </div>
         </div>
-        <div class="feature-main-item to-left">
+        <div class="feature-main-item discount to-left">
           <h3>Скидки 50%
 				</h3>
           <a href="#">На 350 ТОВАРОВ</a>
-          <img src="img.png" alt="корзина">
+
         </div>
-        <div class="feature-main-item to-left">
+        <div class="feature-main-item delivery to-left">
           <h3>Доставка
 				</h3>
           <a href="#">бесплатно</a>
-          <img src="img.png" alt="авто">
         </div>
       </div>
     </section>
@@ -328,13 +338,13 @@
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
-       
+
+        <div class="footer-copyright to-right">
+          <b>Разработано:</b> <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </div>
         <div class="footer-contact to-right">
           <b>обратная связь:</b>
           <a class="btn" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-         <div class="footer-copyright to-right">
-          <b>Разработано:</b> <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
         </div>
       </div>
     </div>
